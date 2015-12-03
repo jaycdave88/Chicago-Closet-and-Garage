@@ -1,0 +1,308 @@
+ load,:before, :after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  background: inherit;
+  -webkit-animation: inherit;
+          animation: inherit;
+}
+
+.s4hedron {
+  -webkit-animation: r 10s ease-in-out infinite;
+          animation: r 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes r {
+  0%, 10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  90%, 100% {
+    -webkit-transform: rotateY(3.125turn);
+            transform: rotateY(3.125turn);
+  }
+}
+
+@keyframes r {
+  0%, 10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  90%, 100% {
+    -webkit-transform: rotateY(3.125turn);
+            transform: rotateY(3.125turn);
+  }
+}
+.scaler {
+  -webkit-animation-name: s;
+          animation-name: s;
+}
+
+@-webkit-keyframes s {
+  0%, 90% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: scale3d(0, 0, 0);
+            transform: scale3d(0, 0, 0);
+  }
+}
+
+@keyframes s {
+  0%, 90% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: scale3d(0, 0, 0);
+            transform: scale3d(0, 0, 0);
+  }
+}
+.s3gon:before, .s3gon:after {
+  margin: -27.71281vmin -18.47521vmin;
+  width: 36.95042vmin;
+  height: 36.95042vmin;
+  -webkit-clip-path: url(#i);
+          clip-path: url(#i);
+  -webkit-animation: none;
+          animation: none;
+  content: '';
+}
+.s3gon:before {
+  opacity: .75;
+}
+.s3gon:after {
+  background: currentColor;
+  -webkit-clip-path: url(#o);
+          clip-path: url(#o);
+}
+.s3gon:nth-child(1) {
+  -webkit-animation-name: a-1;
+          animation-name: a-1;
+}
+@-webkit-keyframes a-1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  30% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(35.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(35.26439deg);
+  }
+  50% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(125.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(125.26439deg);
+  }
+  65% {
+    -webkit-transform: translateZ(0) rotate(45deg) rotateX(125.26439deg);
+            transform: translateZ(0) rotate(45deg) rotateX(125.26439deg);
+  }
+  80%, 100% {
+    -webkit-transform: translateZ(11.31371vmin) rotate(45deg) rotateX(125.26439deg);
+            transform: translateZ(11.31371vmin) rotate(45deg) rotateX(125.26439deg);
+  }
+}
+@keyframes a-1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  30% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(35.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(35.26439deg);
+  }
+  50% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(125.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(125.26439deg);
+  }
+  65% {
+    -webkit-transform: translateZ(0) rotate(45deg) rotateX(125.26439deg);
+            transform: translateZ(0) rotate(45deg) rotateX(125.26439deg);
+  }
+  80%, 100% {
+    -webkit-transform: translateZ(11.31371vmin) rotate(45deg) rotateX(125.26439deg);
+            transform: translateZ(11.31371vmin) rotate(45deg) rotateX(125.26439deg);
+  }
+}
+.s3gon:nth-child(2) {
+  -webkit-animation-name: a-2;
+          animation-name: a-2;
+}
+@-webkit-keyframes a-2 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  30% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(-35.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(-35.26439deg);
+  }
+  50% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(54.73561deg);
+            transform: translateZ(0) rotate(0deg) rotateX(54.73561deg);
+  }
+  65% {
+    -webkit-transform: translateZ(0) rotate(45deg) rotateX(54.73561deg);
+            transform: translateZ(0) rotate(45deg) rotateX(54.73561deg);
+  }
+  80%, 100% {
+    -webkit-transform: translateZ(11.31371vmin) rotate(45deg) rotateX(54.73561deg);
+            transform: translateZ(11.31371vmin) rotate(45deg) rotateX(54.73561deg);
+  }
+}
+@keyframes a-2 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  30% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(-35.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(-35.26439deg);
+  }
+  50% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(54.73561deg);
+            transform: translateZ(0) rotate(0deg) rotateX(54.73561deg);
+  }
+  65% {
+    -webkit-transform: translateZ(0) rotate(45deg) rotateX(54.73561deg);
+            transform: translateZ(0) rotate(45deg) rotateX(54.73561deg);
+  }
+  80%, 100% {
+    -webkit-transform: translateZ(11.31371vmin) rotate(45deg) rotateX(54.73561deg);
+            transform: translateZ(11.31371vmin) rotate(45deg) rotateX(54.73561deg);
+  }
+}
+.s3gon:nth-child(3) {
+  -webkit-animation-name: a-3;
+          animation-name: a-3;
+}
+@-webkit-keyframes a-3 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  30% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(35.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(35.26439deg);
+  }
+  50% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(-54.73561deg);
+            transform: translateZ(0) rotate(0deg) rotateX(-54.73561deg);
+  }
+  65% {
+    -webkit-transform: translateZ(0) rotate(-45deg) rotateX(-54.73561deg);
+            transform: translateZ(0) rotate(-45deg) rotateX(-54.73561deg);
+  }
+  80%, 100% {
+    -webkit-transform: translateZ(-11.31371vmin) rotate(-45deg) rotateX(-54.73561deg);
+            transform: translateZ(-11.31371vmin) rotate(-45deg) rotateX(-54.73561deg);
+  }
+}
+@keyframes a-3 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  30% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(35.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(35.26439deg);
+  }
+  50% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(-54.73561deg);
+            transform: translateZ(0) rotate(0deg) rotateX(-54.73561deg);
+  }
+  65% {
+    -webkit-transform: translateZ(0) rotate(-45deg) rotateX(-54.73561deg);
+            transform: translateZ(0) rotate(-45deg) rotateX(-54.73561deg);
+  }
+  80%, 100% {
+    -webkit-transform: translateZ(-11.31371vmin) rotate(-45deg) rotateX(-54.73561deg);
+            transform: translateZ(-11.31371vmin) rotate(-45deg) rotateX(-54.73561deg);
+  }
+}
+.s3gon:nth-child(4) {
+  -webkit-animation-name: a-4;
+          animation-name: a-4;
+}
+@-webkit-keyframes a-4 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  30% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(-35.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(-35.26439deg);
+  }
+  50% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(-125.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(-125.26439deg);
+  }
+  65% {
+    -webkit-transform: translateZ(0) rotate(-45deg) rotateX(-125.26439deg);
+            transform: translateZ(0) rotate(-45deg) rotateX(-125.26439deg);
+  }
+  80%, 100% {
+    -webkit-transform: translateZ(-11.31371vmin) rotate(-45deg) rotateX(-125.26439deg);
+            transform: translateZ(-11.31371vmin) rotate(-45deg) rotateX(-125.26439deg);
+  }
+}
+@keyframes a-4 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  30% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(-35.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(-35.26439deg);
+  }
+  50% {
+    -webkit-transform: translateZ(0) rotate(0deg) rotateX(-125.26439deg);
+            transform: translateZ(0) rotate(0deg) rotateX(-125.26439deg);
+  }
+  65% {
+    -webkit-transform: translateZ(0) rotate(-45deg) rotateX(-125.26439deg);
+            transform: translateZ(0) rotate(-45deg) rotateX(-125.26439deg);
+  }
+  80%, 100% {
+    -webkit-transform: translateZ(-11.31371vmin) rotate(-45deg) rotateX(-125.26439deg);
+            transform: translateZ(-11.31371vmin) rotate(-45deg) rotateX(-125.26439deg);
+  }
+
+}
+
+https://ihatetomatoes.net/create-custom-preloading-screen/
