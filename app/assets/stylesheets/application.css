@@ -12,4 +12,6 @@
  *
  *= require_self
  */
-
+.clear{	/* the clearfix hack */
+	clear:both;
+}
