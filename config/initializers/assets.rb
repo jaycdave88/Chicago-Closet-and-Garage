@@ -5,7 +5,7 @@ Rails.application.config.assets.version = '1.0'
 
 Rails.application.config.assets.precompile += %w( simple-sidebar.css load_screen.css bootstrap_and_overrides.css)
 
-Rails.application.config.assets.precompile += %w( bootstrap.js )
+Rails.application.config.assets.precompile += %w( bootstrap.js loadscreen.js )
 
 
 # Add additional assets to the asset load path
