@@ -1,6 +1,8 @@
 <%= stylesheet_link_tag "load_screen" %>
 
 <div id="loader-wrapper">
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
     <svg>
       <clipPath id="i" clipPathUnits="objectBoundingBox">
         <polygon points="0.5,0 0.9330127018922194,0.7499999999999999 0.06698729810778076,0.7500000000000002"></polygon>
@@ -17,11 +19,8 @@
         <load class="s3gon"></load>
         <load class="s3gon"></load>
       </load>
-    </load>
-
-    
-      <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
+    </load>        
+</div>
 
 <%= javascript_include_tag "loadscreen" %>
+
