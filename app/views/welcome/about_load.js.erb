@@ -1,1 +1,3 @@
-$('body').after('<%= j render("layouts/about_link") %>')
+(function(){
+  $('#page-content-ajax .col-lg-12').html("<%= j render(:partial => 'about_page_content') %>")
+})();
