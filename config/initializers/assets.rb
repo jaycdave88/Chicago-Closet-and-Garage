@@ -3,9 +3,9 @@
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
 
-Rails.application.config.assets.precompile += %w( simple-sidebar.css load_screen.css bootstrap_and_overrides.css welcome.css)
+Rails.application.config.assets.precompile += %w( simple-sidebar.css load_screen.css bootstrap_and_overrides.css welcome.css owl.carousel.css owl.theme.css owl.transitions.css custom-carousel.css)
 
-Rails.application.config.assets.precompile += %w( bootstrap.js loadscreen.js welcome.js)
+Rails.application.config.assets.precompile += %w( bootstrap.js loadscreen.js welcome.js owl.carousel.js custom-carousel.js jquery-1.11.3.min.js)
 
 
 # Add additional assets to the asset load path

@@ -1,0 +1,28 @@
+<%= stylesheet_link_tag "owl.carousel" %>
+<%= stylesheet_link_tag "owl.theme" %>
+<%= stylesheet_link_tag "owl.transitions" %>
+<%= stylesheet_link_tag "custom-carousel" %>
+
+<!-- <div id="main-carousel" class="owl-carousel owl-theme">
+  <div class="owl-wrapper">
+    <div class="owl-item">
+      <div class="item"><%= image_tag "slider-01.jpg" %></div>
+    </div>
+    <div class="owl-item">
+      <div class="item"><%= image_tag "slider-02.jpg" %></div>
+    </div>
+    <div class="owl-item">
+      <div class="item"><%= image_tag "slider-03.jpg" %></div>
+    </div>
+  </div>
+</div> -->
+
+<div id="main-carousel" class="owl-carousel owl-theme">
+  <div class="item"><%= image_tag "slider-01.jpg" %></div>
+  <div class="item"><%= image_tag "slider-02.jpg" %></div>
+  <div class="item"><%= image_tag "slider-03.jpg" %></div>
+</div>
+
+<%= javascript_include_tag "jquery-1.11.3.min" %>
+<%= javascript_include_tag "owl.carousel" %>
+<%= javascript_include_tag "custom-carousel" %>
