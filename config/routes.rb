@@ -8,4 +8,5 @@ Rails.application.routes.draw do
           get '/about' ,to: "welcome#about_load"
             get '/services' ,to: "welcome#services_load"
               get '/contact' ,to: "welcome#contact_load"
+                get '/home', to: "welcome#home_load"
 end
