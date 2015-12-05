@@ -5,9 +5,7 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                <a href="#">
-                    Start Bootstrap
-                </a>
+                <%= link_to "Home", root_path, remote:true, id:"home_link"%>
             </li>
             <li>
                 <%=link_to "Dashboard", "/dashboard", remote:true,  id:"dashboard_link"%>
@@ -33,8 +31,6 @@
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -42,6 +38,17 @@
                     <div class="btn-toggle-sb">
                         <a href="#menu-toggle" class="glyphicon glyphicon-menu-hamburger btn-xlarge" id="menu-toggle"></a>
                     </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div id="page-content-ajax">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                   <!-- Ajax will load here-->    
                 </div>
             </div>
         </div>
@@ -56,4 +63,3 @@
         $("#wrapper").toggleClass("toggled");
     });
 </script>
-

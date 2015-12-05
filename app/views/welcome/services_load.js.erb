@@ -1,1 +1,3 @@
-$('body').after('<%= j render("layouts/services_link") %>')
+(function(){
+  $('#page-content-ajax .col-lg-12').html("<%= j render(:partial => 'services_page_content') %>");
+})();
