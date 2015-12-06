@@ -1,29 +1,26 @@
 <div class="ajax-page-container">
 
   <style type="text/css">
+
+    /* ---- General ---- */
     * {
       box-sizing: border-box;
     }
-
-    /* force scrollbar */
-    body {
-      font-family: sans-serif;
-      overflow-y: scroll;
-    }
-
-
 
     #menu-toggle {
       z-index: 10;
     }
 
-    /* ---- isotope ---- */
+    /* ---- Isotope ---- */
     .grid {
       background: #DDD;
       margin-top: 4%;
+      max-height: 750px;
+      overflow-y: auto;
+      overflow-x: hidden;
     }
 
-    /* clear fix */
+    /* ---- Clear Fix ---- */
     .grid:after {
       content: '';
       display: block;
@@ -37,18 +34,23 @@
 
     .grid-item {
       position: relative;
-float: left;
-width: 250px;
-height: 250px;
-margin: 5px;
-padding: 10px;
-background: #888;
-color: #262524;
+      float: left;
+      width: 250px;
+      height: auto;
+      margin: 5px auto;
+      padding: 5px;
+      background: #c4b5b5;
+      color: #262524;
     }
 
     .grid-item img {
       display: block;
       max-width: 100%;
+    }
+
+    .grid-item > * {
+      margin: 0;
+      padding: 0;
     }
   </style>
 
@@ -212,7 +214,9 @@ color: #262524;
         percentPosition: true,
         layoutMode: 'fitRows',
         masonry: {
-          columnWidth: '.grid-sizer'
+          // columnWidth: '.grid-sizer'
+          columnWidth: 100,
+          isFitWidth: true
         }
       });
 
