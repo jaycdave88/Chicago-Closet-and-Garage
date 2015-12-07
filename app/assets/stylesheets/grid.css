@@ -1,0 +1,51 @@
+.grid {
+  		overflow: hidden;
+			padding: 0.5em 0 0 0.5em;
+			max-width: 76em;
+			margin: 0 auto;
+			list-style-type: none;
+		}
+		.grid li {
+			padding: 0 0.5em 0.5em 0;
+			list-style-type: none;
+		}
+		.grid li > div {
+			background: #808080;
+			padding: 7em 2em;
+			text-align: center;
+			list-style-type: none;
+		}
+		.grid li.full {
+			width: 100%;
+			list-style-type: none;
+		}
+		.grid li.wide {
+			width: 100%;
+			list-style-type: none;
+		}
+		.grid li a {
+			color: #fff;
+			list-style-type: none;
+		}	
+		
+		@media all and (min-width: 40em) {
+			.grid li {
+				float: left;
+				width: 33.3333333%;
+				list-style-type: none;
+			}
+			.grid li.wide {
+				width: 66.666666%;
+				list-style-type: none;
+			}
+		}
+		@media all and (min-width: 60em) {
+			.grid li {
+				width: 25%;
+				list-style-type: none;
+			}
+			.grid li.wide {
+				width: 50%;
+				list-style-type: none;
+			}
+		}
