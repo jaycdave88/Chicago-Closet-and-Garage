@@ -1,65 +1,35 @@
 <%= stylesheet_link_tag "simple-sidebar" %>
 
-<div id="wrapper" class="toggled">
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <%= link_to "Home", "/home", remote:true, id:"home_link"%>
-            </li>
-            <li>
-                <%=link_to "Dashboard", "/dashboard", remote:true,  id:"dashboard_link"%>
-            </li>
-            <li>
-                <%=link_to "Shortcuts", "/shortcut", remote:true,  id:"shortcut_link"%>
-            </li>
-            <li>
-                <%=link_to "Overview", "/overview", remote:true,  id:"overview_link"%>
-            </li>
-            <li>
-                <%=link_to "Events", "/event", remote:true,  id:"event_link"%>
-            </li>
-            <li>
-                <%=link_to "About", "/about", remote:true,  id:"about_link"%>
-            </li>
-            <li>
-                <%=link_to "Services", "/services", remote:true,  id:"services_link"%>
-            </li>
-            <li>
-                <%=link_to "Contact", "/contact", remote:true,  id:"contact_link"%>
-            </li>
-        </ul>
-    </div>
-    <!-- /#sidebar-wrapper -->
-    <div id="page-content-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="btn-toggle-sb">
-                        <a href="#menu-toggle" class="glyphicon glyphicon-menu-hamburger btn-xlarge" id="menu-toggle"></a>
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Page Content -->
-    <div id="page-content-ajax">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                   <!-- Ajax will load here-->    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /#page-content-wrapper -->
-
+<div id="page-wrapper">
+ <!-- Page Content -->
+ <div id="page-content-ajax">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+             <!-- Ajax will load here-->    
+         </div>
+     </div>
+ </div>
+</div>
 </div>
 
-<script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-</script>
+<div id="btn">
+    <div id='top'></div>
+    <div id='middle'></div>
+    <div id='bottom'></div>
+</div>
+<div id="box">
+    <div id="items">
+        <div class="item"><%=link_to "Home", "/home", remote:true,  id:"home_link"%></div>
+            <br>
+        <div class="item"><%=link_to "Dashboard", "/dashboard", remote:true,  id:"dashboard_link"%></div>
+        <div class="item"> <%=link_to "Shortcuts", "/shortcut", remote:true,  id:"shortcut_link"%></div>
+        <div class="item"><%=link_to "Overview", "/overview", remote:true,  id:"overview_link"%></div>
+        <div class="item"><%=link_to "Events", "/event", remote:true,  id:"event_link"%></div>
+        <div class="item"><%=link_to "About", "/about", remote:true,  id:"about_link"%></div>
+        <div class="item"><%=link_to "Services", "/services", remote:true,  id:"services_link"%></div>
+        <div class="item"><%=link_to "Contact", "/contact", remote:true,  id:"contact_link"%></div>
+    </div>
+</div>
+
+<%= javascript_include_tag "sidebar" %>
