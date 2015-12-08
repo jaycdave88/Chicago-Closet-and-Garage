@@ -9,4 +9,6 @@ Rails.application.routes.draw do
             get '/services' ,to: "welcome#services_load"
               get '/contact' ,to: "welcome#contact_load"
                 get '/home', to: "welcome#home_load"
+
+                resources :messages, only: [:new, :create]
 end
