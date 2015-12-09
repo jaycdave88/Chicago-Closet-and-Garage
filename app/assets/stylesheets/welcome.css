@@ -1,3 +1,7 @@
 .ajax-page-container-home {
 	padding:none;
 }
+
+#page-content-ajax > div > div > div > div > h1{
+	color:black;
+}

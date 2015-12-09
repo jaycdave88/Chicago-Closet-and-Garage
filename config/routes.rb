@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/contact_page' ,to: "welcome#contact_load"
   get '/home', to: "welcome#home_load"
 
-  resources :contact, except: [:new, :create, :edit, :update, :destroy, :show]
+  resources :contact, only: [:post]
 
   namespace :api do
     namespace :v1 do
