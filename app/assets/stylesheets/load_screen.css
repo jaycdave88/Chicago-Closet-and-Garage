@@ -18,8 +18,8 @@ body {
 }
 
 .s4hedron {
-  -webkit-animation: r 10s ease-in-out infinite;
-          animation: r 10s ease-in-out infinite;
+  -webkit-animation: r 10.4s ease-in-out infinite;
+          animation: r 10.4s ease-in-out infinite;
 }
 
 @-webkit-keyframes r {
