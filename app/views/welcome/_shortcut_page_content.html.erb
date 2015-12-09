@@ -11,46 +11,21 @@
       z-index: 10;
     }
 
-    /* ---- Isotope ---- */
     .grid {
-      background: #DDD;
-      margin-top: 4%;
-      max-height: 750px;
+      max-height: 100vh;
       overflow-y: auto;
       overflow-x: hidden;
+      margin-left: 50px;
     }
 
-    /* ---- Clear Fix ---- */
-    .grid:after {
-      content: '';
+    .grid .grid-item {
+      width: 25%;
+    }
+
+    .grid .grid-item img {
+      width:100%;
+      height:100%;
       display: block;
-      clear: both;
-    }
-
-    /* ---- .grid-item ---- */
-    .grid-sizer, .grid-item {
-      width: 20.333%;
-    }
-
-    .grid-item {
-      position: relative;
-      float: left;
-      width: 250px;
-      height: auto;
-      /*margin: 5px auto;*/
-      /*padding: 5px;*/
-      background: #c4b5b5;
-      color: #262524;
-    }
-
-    .grid-item img {
-      display: block;
-      max-width: 100%;
-    }
-
-    .grid-item > * {
-      margin: 0;
-      padding: 0;
     }
   </style>
 
@@ -205,25 +180,11 @@
   <%= javascript_include_tag "gallery.pkgd.min" %>
 
   <script>
-    docReady( function() {
-
-      var grid = document.querySelector('.grid');
-
-      var iso = new Isotope( grid, {
-        itemSelector: '.grid-item',
-        percentPosition: true,
-        layoutMode: 'fitRows',
-        masonry: {
-          // columnWidth: '.grid-sizer'
-          columnWidth: 100,
-          isFitWidth: true
-        }
+    var $container = $(".grid");
+    $container.imagesLoaded(function () {
+      $container.isotope({
+        itemSelector: ".grid-item",
       });
-
-      imagesLoaded( grid, function() {
-        iso.layout();
-      });
-
     });
   </script>
 
