@@ -1,15 +1,15 @@
 <%= stylesheet_link_tag "simple-sidebar" %>
 
 <div id="page-wrapper">
- <!-- Page Content -->
- <div id="page-content-ajax">
+   <!-- Page Content -->
+   <div id="page-content-ajax">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-             <!-- Ajax will load here-->    
-         </div>
-     </div>
- </div>
+               <!-- Ajax will load here-->    
+           </div>
+       </div>
+   </div>
 </div>
 </div>
 
@@ -21,14 +21,16 @@
 <div id="box">
     <div id="items">
         <div class="item"><%=link_to "Home", "/home", remote:true,  id:"home_link"%></div>
-            <br>
-        <div class="item"><%=link_to "Dashboard", "/dashboard", remote:true,  id:"dashboard_link"%></div>
-        <div class="item"> <%=link_to "Shortcuts", "/shortcut", remote:true,  id:"shortcut_link"%></div>
-        <div class="item"><%=link_to "Overview", "/overview", remote:true,  id:"overview_link"%></div>
-        <div class="item"><%=link_to "Events", "/event", remote:true,  id:"event_link"%></div>
-        <div class="item"><%=link_to "About", "/about", remote:true,  id:"about_link"%></div>
+        <br>
+        <div class="item"><%=link_to "About Us", "/about", remote:true,  id:"about_link"%></div>
+        <div class="item"><%=link_to "Contact Us", "/contact_page", remote:true,  id:"contact_link"%></div>
         <div class="item"><%=link_to "Services", "/services", remote:true,  id:"services_link"%></div>
-        <div class="item"><%=link_to "Contact", "/contact_page", remote:true,  id:"contact_link"%></div>
+
+        
+        <div class="item"> <%=link_to "Photo Gallery", "/gallery", remote:true,  id:"shortcut_link"%></div>
+        <div class="item"><%=link_to "Overview", "/overview", remote:true,  id:"overview_link"%></div>
+    
+    
     </div>
 </div>
 
