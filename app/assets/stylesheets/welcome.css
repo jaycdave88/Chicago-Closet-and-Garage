@@ -17,7 +17,8 @@
 }
 
 body {
-  background-color: #F4F4F4
+  background-color: #F4F4F4;
+  bottom:0;
 }
 
 a,
@@ -691,7 +692,6 @@ a.thumbnail.active {
   font-size: 14px;
   border-top: 1px solid #191919;
   background: none repeat scroll 0% 0% #212121;
-  padding: 30px 20px 10px;
   color: #adadad;
   line-height: 28px;
 
@@ -885,4 +885,26 @@ button#submit{
 }
 .float-left{
   float:left;
+}
+.row-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  legend{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  #page-content-ajax > div > div > div > p{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+#circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px; 
+  background-color: green;
+
 }
