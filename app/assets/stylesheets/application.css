@@ -13,3 +13,6 @@
  *= require normalize-rails
  *= require_self
  */
+ .no-padding{
+ 	padding: 0;
+ }
