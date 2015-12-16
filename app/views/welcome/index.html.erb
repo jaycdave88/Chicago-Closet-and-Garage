@@ -1,3 +1,7 @@
-<%#= render 'loadscreen'  %>
+<%= render 'loadscreen'  %>
 
-<%= render 'sidebar'  %>
+<div id="first-load"></div>
+
+<%= render ('sidebar')  %>
+
+  <%= javascript_include_tag "homePageLoad" %>

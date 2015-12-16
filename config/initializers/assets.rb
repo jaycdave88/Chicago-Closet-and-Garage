@@ -5,7 +5,7 @@ Rails.application.config.assets.version = '1.0'
 
 Rails.application.config.assets.precompile += %w( simple-sidebar.css load_screen.css bootstrap_and_overrides.css welcome.css bootstrap-carosel.css grid.css contactForm.css lightbox.min.css)
 
-Rails.application.config.assets.precompile += %w( bootstrap.js loadscreen.js welcome.js gallery.pkgd.min.js sidebar.js carousel.js contactForm.js lightbox.min.js)
+Rails.application.config.assets.precompile += %w( bootstrap.js loadscreen.js welcome.js gallery.pkgd.min.js sidebar.js carousel.js contactForm.js homePageLoad.js lightbox.min.js)
 
 
 # Add additional assets to the asset load path

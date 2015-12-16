@@ -1,4 +1,98 @@
-<div class="ajax-page-container">
-  <h1>This is contact page</h1> 
-  <%= render("layouts/contactME")  %> 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+<br>
+<br>
+
+<!-- Form Name -->
+<legend>Contact Us</legend>
+<p>
+  Would you like to see some examples of Chicago Closet and Garge?
+  <%=link_to "Click here!", "/gallery", remote:true,  id:"link"%>
+</p>
+
+<div class="container ">
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-4 animate" >
+          <div class="text-center" data-toggle="tooltip" title="Telefonnummer">
+            <span class="contact-icon"><i class="fa fa-phone"></i></span>
+            <p><abbr data-toggle="tooltip" title="telephone">Tel.</abbr> (630) 731-9773</p>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-animation='fadeInRight' data-animation-delay='100'>
+          <div class="text-center" data-toggle="tooltip" title="E-mail">
+            <span class="contact-icon"><i class="fa fa-envelope-o"></i></span>
+            <p><a href="mailto:Jay@jcdenterprisesinc.com?subject=Interested in connecting">President & CEO</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 animate" data-animation='fadeInUp' data-animation-delay='100'>
+          <div class="text-center" data-toggle="tooltip" title="Live Support">
+            <span class="contact-icon"><i class="fa fa-plus-square"></i></span>
+            <p>Fast Quote</p>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <br>
+
+      <form role="form" class="form-horizontal" id="contact_form" role="form" action='/api/v1/contact' method='post' id="contactForm" data-remote=true>
+        <fieldset>
+          <div class="row-fluid">
+            <div class="span4">
+              <!-- Name-->
+              <div class="form-group">
+                <!-- <div class="col-md-9"> -->
+                <input id="name" name="name" type="text" placeholder="Name*" class="form-control input-md" required="">    
+                <!-- </div> -->
+              </div>
+
+              <!-- Email-->
+              <div class="form-group">
+                <!-- <div class="col-md-9"> -->
+                <input id="email" name="email" type="text" placeholder="Email*" class="form-control input-md" required="">
+                <!-- </div> -->
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group">
+                <!-- <div class="col-md-9"> -->
+                <input id="subject" name="subject" type="text" placeholder="Phone*" class="form-control input-md" required="">
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Message -->
+          
+          <div class="form-group">
+            <!-- <div class="col-md-9">                      -->
+            <textarea class="form-control" id="message" name="message" cols="6" rows="6"></textarea>
+            <!-- </div> -->
+          </div>
+
+          <!-- Button -->
+          <div class="float-left">
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="submit"></label>
+              <!-- <div class="span4"> -->
+              <button id="submit" name="submit" class="btn btn-primary submit_contactMe" >Send Message</button>
+              <!-- </div> -->
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+
+    </div>
+  </section>
 </div>
+
+
+<%= javascript_include_tag "contactForm" %>
+<%= render("footer") %>
