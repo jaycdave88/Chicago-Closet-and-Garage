@@ -14,19 +14,17 @@
 </div>
 
 
-<div id="btn">
+  <div id="btn">
     <div id='top'></div>
     <div id='middle'></div>
     <div id='bottom'></div>
-</div>
+  </div>
 
 
 
 <div id="box">
   <div id="items">
-
-    <div class="item"><%=link_to "Home", "/home", remote:true,  id:"link"%></div>
-    <br>
+    <div class="item"><%= link_to image_tag( 'logo.png'), '/home' ,remote:true, id:'link'%></div>
     <div class="item"><%=link_to "About Us", "/about", remote:true,  id:"link"%></div>
     <div class="item"><%=link_to "Contact Us", "/contact_page", remote:true,  id:"contact_link"%></div>
     <div class="item"><%=link_to "Services", "/services", remote:true,  id:"link"%></div>

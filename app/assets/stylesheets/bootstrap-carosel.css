@@ -12,7 +12,7 @@
   width:100%;
   position:relative;
   max-height:600px;
-  top:43px;
+  /*top:43px;*/
 }
 
 .carousel .item .imageContainer:before{

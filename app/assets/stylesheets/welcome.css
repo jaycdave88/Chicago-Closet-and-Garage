@@ -901,10 +901,13 @@ button#submit{
     padding-right: 15px !important;
   }
 
-#circle {
+.circle {
   border-radius: 50%;
-  width: 200px;
-  height: 200px; 
+  width: 50px;
+  height: 50px; 
   background-color: green;
+  top:1px;
+  left:8px;
+  position: fixed;
 
 }
