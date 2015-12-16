@@ -5,5 +5,5 @@ $(document).ready(function() {
 		$('#contact_link').click(function(){
 			$('#screenCSS').remove()
 		})
-	}, 9250);  
+	}, 6540);  
 })
