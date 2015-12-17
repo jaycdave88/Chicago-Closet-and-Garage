@@ -6,7 +6,7 @@ $(".single-slide").owlCarousel({
   autoplayHoverPause:true,
   singleItem    : true,
   navigation : true,
-  navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+  navText: ["<i class='glyphicon glyphicon-chevron-left'></i>","<i class='glyphicon glyphicon-chevron-right'></i>"],
   pagination : true,
   animateOut: 'fadeOut' 
 });
@@ -14,7 +14,7 @@ $('.testi-two').owlCarousel({
   loop:true,
   margin:30,
   nav:true,
-  navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+  navText: ["<i class='glyphicon glyphicon-chevron-left'></i>","<i class='glyphicon glyphicon-chevron-right'></i>"],
   responsive:{
     0:{
       items:1
