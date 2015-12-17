@@ -1148,6 +1148,52 @@ button#submit{
 }
 
 /*=======================================================
+      Why Choose Us
+========================================================*/
+.line-height-26 {
+  line-height: 26px !important;
+}
+.light-gray-bg {
+  background: #f9f9f9;
+}
+p {
+  font-family: inherit;
+  font-weight: 400;
+  color: #6f6f6f;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+}
+.num-process .icon span{
+  height:26px;
+  width:26px;
+  line-height:26px;
+  border-radius:50%;
+  text-align:center;
+  color:#fff;
+  background:#ffbe00;
+  font-size:12px;
+  display:inline-block;
+  margin-bottom:10px; 
+}
+.we-are-good article{
+  margin-bottom:30px;
+}
+.we-are-good article{
+  border:1px solid #ececec;
+  padding:35px 20px;
+  position:relative;
+  overflow:hidden;
+}
+.margin-bottom-10{margin-bottom:10px !important;}
+.font-normal {
+  font-weight: normal !important;
+}
+.bold{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/*=======================================================
       owl
 ========================================================*/
 
