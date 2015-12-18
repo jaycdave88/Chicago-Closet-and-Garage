@@ -1,5 +1,4 @@
-.lb-loader,
-.lightbox {
+.lb-loader, .lightbox {
     text-align: center;
     line-height: 0
 }
@@ -9,8 +8,7 @@ body:after {
     display: none
 }
 
-.lb-dataContainer:after,
-.lb-outerContainer:after {
+.lb-dataContainer:after, .lb-outerContainer:after {
     content: "";
     clear: both
 }
@@ -58,8 +56,7 @@ body.lb-disable-scrolling {
     border-radius: 4px
 }
 
-.lb-loader,
-.lb-nav {
+.lb-loader, .lb-nav {
     position: absolute;
     left: 0
 }
@@ -69,7 +66,7 @@ body.lb-disable-scrolling {
 }
 
 .lb-container {
-    padding: 4px
+    /*padding: 4px*/
 }
 
 .lb-loader {
@@ -102,8 +99,7 @@ body.lb-disable-scrolling {
     background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
 }
 
-.lb-next,
-.lb-prev {
+.lb-next, .lb-prev {
     height: 100%;
     cursor: pointer;
     display: block
