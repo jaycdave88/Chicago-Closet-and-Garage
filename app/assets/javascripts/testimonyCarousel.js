@@ -5,16 +5,16 @@ $(".single-slide").owlCarousel({
   autoplayTimeout:5000,
   autoplayHoverPause:true,
   singleItem    : true,
-  navigation : true,
-  navText: ["<i class='glyphicon glyphicon-chevron-left'></i>","<i class='glyphicon glyphicon-chevron-right'></i>"],
+  navigation : false,
+  navText: [""],
   pagination : true,
   animateOut: 'fadeOut' 
 });
 $('.testi-two').owlCarousel({
   loop:true,
   margin:30,
-  nav:true,
-  navText: ["<i class='glyphicon glyphicon-chevron-left'></i>","<i class='glyphicon glyphicon-chevron-right'></i>"],
+  nav:false,
+  navText: [""],
   responsive:{
     0:{
       items:1
