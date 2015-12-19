@@ -1,9 +1,9 @@
 <%= javascript_include_tag "owlCarousel" %>
-<div class="about-page">
+<div class="no-dots">
   <section class="padding-top-150 padding-bottom-150">
     <div class="container"> 
       <!-- HEADING -->
-      <div class="heading text-left">
+      <div class="heading text-center">
         <h3> Why <span>choose us?</span></h3>
         <hr>
       </div>
@@ -137,16 +137,16 @@
                       <!-- TEAM MEMBERS -->
                       <div class="members text-center">
                         <ul class="row">
-                          <li class="col-sm-3"> <img class="img-responsive" src="images/member-1.jpg" alt="">
+                          <li class="col-sm-3"> <%  %>
                             <h6 class="font-normal">Luke Walker</h6>
                             <span>Designer</span> </li>
-                            <li class="col-sm-3"> <img class="img-responsive" src="images/member-2.jpg" alt="">
+                            <li class="col-sm-3"> <%  %>
                               <h6 class="font-normal">Luke Walker</h6>
                               <span>Designer</span> </li>
-                              <li class="col-sm-3"> <img class="img-responsive" src="images/member-3.jpg" alt="">
+                              <li class="col-sm-3"> <%  %>
                                 <h6 class="font-normal">Luke Walker</h6>
                                 <span>Designer</span> </li>
-                                <li class="col-sm-3"> <img class="img-responsive" src="images/member-4.jpg" alt="">
+                                <li class="col-sm-3"> <%  %>
                                   <h6 class="font-normal">Luke Walker</h6>
                                   <span>Designer</span> </li>
                                 </ul>
@@ -234,8 +234,5 @@
                                 </div>
                               </section>
                             </div>
-                            <%= render('footer')  %>
-
-
-
-                            <%= javascript_include_tag "testimonyCarousel" %>
+<%= render('footer')  %>
+<%= javascript_include_tag "testimonyCarousel" %>
