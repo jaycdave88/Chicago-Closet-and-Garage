@@ -1396,10 +1396,16 @@ footer button{
   margin: 0px;
 }
 
-#jcd-info{
-  font-size: 8px;
-}
 #jcd_info_link{
-  color: red;
+  color: #ffbe00  ;
 }
+
+.col-sm-4:nth-child(2) h6{
+  font-size: 18px;
+}
+.col-sm-4:nth-child(3) h6{
+  font-size: 18px;
+}
+
+
 
