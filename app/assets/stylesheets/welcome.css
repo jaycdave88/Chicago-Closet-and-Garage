@@ -1622,6 +1622,27 @@ legend{
         color: #fff;
       }
 
+      .successMessage {
+        background-color: #3ED03E;
+        color: #fff;
+        clear: right;
+        display: none;
+        font-size: 14px;
+        font-weight: bold;
+        height: 75px;
+        letter-spacing: 1px;
+        -moz-border-radius: 0px 0px 3px 3px;
+        -webkit-border-radius: 0px 0px 3px 3px;
+        border-radius: 0px 0px 3px 3px;
+      }
+
+      .successMessage p {
+        margin: 0px;
+        padding: 30px 0px 0px 30px;
+        text-align: left;
+        color: #fff;
+      }
+
       /*Scroll to top*/
       .scrollToTop{
         width:59px; 

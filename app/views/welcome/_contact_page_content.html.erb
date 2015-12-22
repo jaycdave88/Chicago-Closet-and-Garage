@@ -1,9 +1,6 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
 <br>
-
-
 <!-- Form Name -->
-
 <div class="contact_page">
   <section class="contact-page padding-top-100 padding-bottom-100">
     <div class="container">
@@ -19,67 +16,49 @@
               </p>
             </div>
           </div>
-
           <div id="contactForm"> 
-            <!-- Form  -->
             <div class="margin-top-50">
-
               <!-- FORM -->
               <form role="form" class="formValidation" id="contactForm" role="form" action='/api/v1/contact' method='post' data-remote=true>
-
                 <fieldset>
                   <div class="row-fluid">
                     <div class="span4">
-
                       <!-- Name-->
-
                       <div class="form-group">
                         <input id="fname" name="name" type="text" placeholder="Name*" class="inputValidation">
                       </div>
-
                       <!-- Email-->
                       <div class="form-group">
                         <input id="femail" name="email" type="text" placeholder="Email*" class="inputValidation" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                       </div>
-
                       <!-- Phone -->
                       <div class="form-group">
                         <input id="fsubject" name="subject" type="text" placeholder="Phone*" class="inputValidation" pattern="^[0-9]{3}[0-9]{3}[0-9]{4}$">
                       </div>
-
                     </div>
                   </div>
-
                   <!-- Message -->
                   <div class="form-group">
                     <textarea class="form-control" id="message" name="message" cols="6" rows="6"></textarea>
                   </div>
-
                   <!-- Button -->
                   <div class="float-left">
                     <div class="form-group">
                       <label class="col-md-4"></label>
-
                       <button id="submit" name="submit" class="btn btn-primary submit_contactMe">Send Message</button>
                     </div>
                   </div>
-
                 </fieldset>
               </form>
               <br>
-              
-              <!-- Error Message -->
-                <%= p "*"*64 %>
-              <%= p @hasFinished  %>
-              <%= p "*"*64 %>
-
+              <!-- Message -->
+              <div id="message-container">
                 <div class="errorMessage"></div>
-
+              </div>
             </div>
           </div>
         </div>
         <br>
-
         <div class="col-md-3">
           <div class="heading text-left margin-bottom-20">
             <h3> Solutions <span>For</span></h3>
@@ -130,10 +109,7 @@
         </div>
       </div>
     </div>
-
   </section>
 </div>
-
 <%= render('footer')  %>
-
 <%= javascript_include_tag "contactForm" %>
