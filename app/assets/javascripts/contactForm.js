@@ -32,6 +32,7 @@ $(".formValidation").on("submit", function(e){
       $this.addClass("inputError");
       errorMessage.html("<p>Error: Please correct errors above</p>");
     }if($this.val() != ""){
+      $('.errorMessage').addClass('successMessage').html("<p>Success: Thank you for contacting us! Your message has been received. We will get back to you shortly.</p>");
       $this.removeClass("inputError"); 
     }else{
       return true; 

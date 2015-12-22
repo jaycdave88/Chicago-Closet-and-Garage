@@ -22,17 +22,17 @@
   padding: 10px !important;
   font-size: 18px !important;
   border: 1px solid #000 !important;
-   -webkit-transition: background .8s ease-out;
-    -moz-transition: background .8s ease-out;
-    -o-transition: background .8s ease-out;
-    -transition: background .8s ease-out;
+  -webkit-transition: background .8s ease-out;
+  -moz-transition: background .8s ease-out;
+  -o-transition: background .8s ease-out;
+  -transition: background .8s ease-out;
 }
 
 .btn-primary:hover{
  background-color: #fff !important;
  color: #000 !important;
  padding: 10px !important;
-border: 1px solid #ffbe00!important;
+ border: 1px solid #ffbe00!important;
 
 }
 
@@ -1617,7 +1617,28 @@ legend{
 
       .errorMessage p {
         margin: 0px;
-        padding: 30px 0px 0px 30px;
+        padding: 15px 0px 0px 30px;
+        text-align: left;
+        color: #fff;
+      }
+
+      .successMessage {
+        background-color: #3ED03E;
+        color: #fff;
+        clear: right;
+        display: none;
+        font-size: 14px;
+        font-weight: bold;
+        height: 75px;
+        letter-spacing: 1px;
+        -moz-border-radius: 0px 0px 3px 3px;
+        -webkit-border-radius: 0px 0px 3px 3px;
+        border-radius: 0px 0px 3px 3px;
+      }
+
+      .successMessage p {
+        margin: 0px;
+        padding: 15px 0px 0px 30px;
         text-align: left;
         color: #fff;
       }
