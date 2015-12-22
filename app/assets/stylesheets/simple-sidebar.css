@@ -15,7 +15,7 @@
 }
 
 #btn {
-  position: fixed;
+  position: absolute;
   z-index: 5;
   top: 15px;
   left: 15px;

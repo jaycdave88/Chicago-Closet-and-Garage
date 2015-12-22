@@ -1619,3 +1619,26 @@ legend{
         text-align: left;
         color: #fff;
       }
+
+      /*Scroll to top*/
+      .scrollToTop{
+        width:59px; 
+        height:61px;
+        padding:10px; 
+        text-align:center; 
+        background: whiteSmoke;
+        font-weight: bold;
+        color: #444;
+        text-decoration: none;
+        position:fixed;
+        top:480px;
+        right:10px;
+        display:none;
+        background: url("http://s4.postimg.org/h6ze8md7t/image.png") no-repeat;
+        z-index: 1;
+      }
+      .scrollToTop:hover{
+        text-decoration:none;
+      }
+
+
