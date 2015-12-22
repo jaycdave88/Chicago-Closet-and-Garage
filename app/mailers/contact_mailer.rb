@@ -1,4 +1,5 @@
 class ContactMailer < ActionMailer::Base
+
   def send_message params
     @name = params[:name]
     @email = params[:email]

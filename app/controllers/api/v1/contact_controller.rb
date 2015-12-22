@@ -1,10 +1,12 @@
 class Api::V1::ContactController < ActionController::Base
 	def create
 		begin
-			ContactMailer.send_message(params).deliver
-			@flash = { success: true, message: 'Your message has been delivered!!' }
-		rescue Exception => e
-			@flash = { success: false, message: e.message }
+
+      if params['name'] == "" || params['email'] == "" || params['subject'] == ""
+        puts "The required information was not provided"
+      else
+        ContactMailer.send_message(params).deliver
+      end 
 		end
 	end
 end
