@@ -31,7 +31,6 @@ $(".formValidation").on("submit", function(e){
       hasError = true;
       $this.addClass("inputError");
       errorMessage.html("<p>Error: Please correct errors above</p>");
-      e.preventDefault();
     }if($this.val() != ""){
       $this.removeClass("inputError"); 
     }else{
