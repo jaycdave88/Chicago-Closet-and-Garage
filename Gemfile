@@ -12,6 +12,7 @@ gem 'tzinfo-data'
 gem 'normalize-rails'
 gem "figaro"
 
+
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
